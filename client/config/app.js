@@ -1,7 +1,7 @@
 (function() {
-  angular
-    .module('fbaseballDraftRanker', [
-      'ui.router',
-      'ngAnimate'
+   angular
+      .module('fbaseballDraftRanker', [
+         'ui.router',
+         'ngAnimate'
     ]);
 })();
