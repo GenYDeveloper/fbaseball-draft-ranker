@@ -1,7 +1,7 @@
 {
   "name": "fbaseball-draft-ranker",
   "version": "1.0.0",
-  "description": "Fantasy baseball \u001b[H\u001b[D\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[A\u001b[A\u001b[A\u001b[A\u001b[A\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[CCustom fantasy baseball draft ranker",
+  "description": "Custom fantasy baseball draft ranker",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,9 +16,26 @@
     "ExpressJS"
   ],
   "author": "Brian Thompson",
-  "license": "ISC",
+  "license": "GNU GENERAL PUBLIC LICENSE",
   "bugs": {
     "url": "https://github.com/sudolife/fbaseball-draft-ranker/issues"
   },
-  "homepage": "https://github.com/sudolife/fbaseball-draft-ranker#readme"
+  "homepage": "https://github.com/sudolife/fbaseball-draft-ranker#readme",
+  "devDependencies": {
+    "bower": "~1.7.1",
+    "karma": "~0.13.15",
+    "grunt": "~0.4.5",
+    "grunt-karma": "~0.12.1",
+    "grunt-html-build": "~0.5.2",
+    "grunt-cli": "~0.1.13",
+    "grunt-contrib-jshint": "~0.11.3",
+    "karma-html-reporter": "~0.2.7",
+    "gulp": "~3.9.0",
+    "jshint-stylish": "~2.1.0",
+    "grunt-bowercopy": "~1.2.3",
+    "express": "~4.13.3",
+    "karma-chrome-launcher": "~0.2.2",
+    "phantomjs": "~1.9.19",
+    "karma-phantomjs-launcher": "~0.2.1"
+  }
 }
