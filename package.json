@@ -1,0 +1,24 @@
+{
+  "name": "fbaseball-draft-ranker",
+  "version": "1.0.0",
+  "description": "Fantasy baseball \u001b[H\u001b[D\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[B\u001b[A\u001b[A\u001b[A\u001b[A\u001b[A\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[CCustom fantasy baseball draft ranker",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sudolife/fbaseball-draft-ranker.git"
+  },
+  "keywords": [
+    "AngularJS",
+    "NodeJS",
+    "ExpressJS"
+  ],
+  "author": "Brian Thompson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sudolife/fbaseball-draft-ranker/issues"
+  },
+  "homepage": "https://github.com/sudolife/fbaseball-draft-ranker#readme"
+}
