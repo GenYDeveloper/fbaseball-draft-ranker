@@ -15,8 +15,10 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
+      'vendors/libs/**/*.js',
       'client/**/*.js',
-      'server/**/*.js'
+      'server/**/*.js',
+      'client/views/**/*.html'
     ],
 
 
@@ -29,13 +31,18 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
+      'client/views/**/*.html': ['ng-html2js']
     },
+
+    ngHtml2JsPreprocessor: {
+      moduleName: 'fbaseballDraftRankerApp'
+   },
 
 
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['progress'],
+    reporters: ['progress', 'html'],
 
 
     // web server port
@@ -57,7 +64,7 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Chrome', 'PhantomJS'],
+    browsers: ['Firefox', 'PhantomJS'],
 
 
     // Continuous Integration mode

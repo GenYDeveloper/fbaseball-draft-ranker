@@ -1,6 +1,6 @@
 (function() {
    angular
-      .module('fbaseballDraftRanker', [
+      .module('fbaseballDraftRankerApp', [
          'ui.router',
          'ngAnimate'
     ]);

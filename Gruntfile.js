@@ -23,7 +23,7 @@ module.exports = function(grunt) {
            },
            reporter: require('jshint-stylish')
          },
-         all: ['!client/vendors/**/*.js','client/**/*.js','server/**/*.js','server.js']
+         all: ['!client/vendors/**/*.js','client/**/*.js','server/**/*.js','!server.js']
       },
       bowercopy: {
          options: {
@@ -39,14 +39,15 @@ module.exports = function(grunt) {
              'libs/angular-ui-router/angular-ui-router.js':'angular-ui-router/release/angular-ui-router.js',
              'libs/jquery/jquery.js':'jquery/dist/jquery.js',
              'libs/bootstrap/bootstrap.js':'bootstrap/dist/js/bootstrap.js',
-             'styles/bootstrap/css/':'bootstrap/dist/css/',
+             'styles/bootstrap/css/bootstrap.css':'bootstrap/dist/css/bootstrap.css',
+             'styles/bootstrap/css/bootstrap-theme.css':'bootstrap/dist/css/bootstrap-theme.css',
              'styles/bootstrap/fonts/':'bootstrap/dist/fonts/'
            }
          }
       },
       htmlbuild: {
          dist: {
-           src: 'client/views/templates/index.html.tpl',
+           src: 'client/views/templates/index.template.html',
            dest: 'client/views/index.html',
            options: {
              beautify: true,
@@ -84,6 +85,11 @@ module.exports = function(grunt) {
 
    grunt.registerTask('lint', ['jshint']);
    grunt.registerTask('bower', ['bowercopy']);
-   grunt.registerTask('test', ['karma']);
+   grunt.registerTask('test', [
+      'bowercopy',
+      'jshint',
+      'htmlbuild',
+      'karma'
+   ]);
    grunt.registerTask('build', ['htmlbuild']);
 };

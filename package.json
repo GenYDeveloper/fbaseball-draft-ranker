@@ -29,13 +29,17 @@
     "grunt-html-build": "~0.5.2",
     "grunt-cli": "~0.1.13",
     "grunt-contrib-jshint": "~0.11.3",
-    "karma-html-reporter": "~0.2.7",
     "gulp": "~3.9.0",
     "jshint-stylish": "~2.1.0",
     "grunt-bowercopy": "~1.2.3",
     "express": "~4.13.3",
     "karma-chrome-launcher": "~0.2.2",
     "phantomjs": "~1.9.19",
-    "karma-phantomjs-launcher": "~0.2.1"
+    "karma-phantomjs-launcher": "~0.2.1",
+    "jasmine-core": "~2.4.1",
+    "karma-jasmine": "~0.3.6",
+    "karma-firefox-launcher": "~0.1.7",
+    "karma-jasmine-html-reporter": "~0.1.8",
+    "karma-ng-html2js-preprocessor": "~0.2.0"
   }
 }

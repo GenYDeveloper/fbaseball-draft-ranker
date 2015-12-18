@@ -1,6 +1,6 @@
 (function() {
    angular
-      .module('fbaseballDraftRanker')
+      .module('fbaseballDraftRankerApp')
       .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
          $urlRouterProvider.otherwise('/home');
 
