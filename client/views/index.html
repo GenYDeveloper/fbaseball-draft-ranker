@@ -9,12 +9,14 @@
     <script type="text/javascript" src="../../vendors/libs/bootstrap/bootstrap.js"></script>
     <script type="text/javascript" src="../config/app.js"></script>
     <script type="text/javascript" src="../config/routes.js"></script>
+    <script type="text/javascript" src="../modules/player/addPlayerForm.js"></script>
+    <script type="text/javascript" src="../modules/player/playerModel.controller.js"></script>
     <link type="text/css" rel="stylesheet" href="../../vendors/styles/bootstrap/css/bootstrap.css" />
     <link type="text/css" rel="stylesheet" href="../../vendors/styles/bootstrap/css/bootstrap-theme.css" />
     <link type="text/css" rel="stylesheet" href="../../vendors/styles/main.css" />
 </head>
 
-<body ng-app="fbaseballDraftRanker">
+<body ng-app="fbaseballDraftRankerApp">
 
     <section class="jumbotron">
         <div class="container">
@@ -47,6 +49,16 @@
             </div>
         </div>
     </nav>
+
+    <section ng-controller="PlayerModelController" class="row">
+        <div class="col-xs-12">
+            <add-player-form></add-player-form>
+        </div>
+        <ul>
+            <li ng-repeat="player in playerList track by $index">{{player.lastName}}</li>
+        </ul>
+    </section>
+
 
     <section class="row">
         <div class="span12 ui-view-container">

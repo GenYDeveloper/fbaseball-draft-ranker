@@ -42,6 +42,16 @@
       </div>
    </nav>
 
+   <section ng-controller="PlayerModelController" class="row">
+      <div class="col-xs-12">
+         <add-player-form></add-player-form>
+      </div>
+      <ul>
+         <li ng-repeat="player in playerList track by $index">{{player.lastName}}</li>
+      </ul>
+   </section>
+
+
    <section class="row">
       <div class="span12 ui-view-container">
          <div class="well" ui-view></div>
