@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <!-- build:script devbundle -->
-   <!-- /build -->
-   <!-- build:style devbundle -->
-   <!-- /build -->
+   <!-- inject:css -->
+   <link rel="stylesheet" href="../client/vendor/css/bootstrap-theme.css">
+   <link rel="stylesheet" href="../client/vendor/css/bootstrap.css">
+   <!-- endinject -->
+
 </head>
 
 <body ng-app="fbaseballDraftRankerApp">
@@ -30,26 +31,26 @@
                <span class="icon-bar"></span>
                <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">PassGen</a>
+            <a class="navbar-brand" href="#">FBDR</a>
          </div>
 
          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                <li><a ui-sref="home">Home</a></li>
-               <li><a ui-sref="test">Test</a></li>
+               <li><a ui-sref="about">About</a></li>
             </ul>
          </div>
       </div>
    </nav>
 
-   <section ng-controller="PlayerModelController" class="row">
+<!--    <section ng-controller="PlayerModelController" class="row">
       <div class="col-xs-12">
          <add-player-form></add-player-form>
       </div>
       <ul>
          <li ng-repeat="player in playerList track by $index">{{player.lastName}}</li>
       </ul>
-   </section>
+   </section> -->
 
 
    <section class="row">
@@ -58,5 +59,17 @@
       </div>
    </section>
 
+   <!-- inject:js -->
+   <script src="../client/vendor/js/jquery.js"></script>
+   <script src="../client/vendor/js/angular.js"></script>
+   <script src="../client/vendor/js/angular-animate.js"></script>
+   <script src="../client/vendor/js/angular-ui-router.js"></script>
+   <script src="../client/vendor/js/bootstrap.js"></script>
+   <script src="../client/vendor/js/lodash.js"></script>
+   <script src="../client/app.js"></script>
+   <script src="../client/app.constants.js"></script>
+   <script src="../client/app.run.js"></script>
+   <script src="../client/app.routes.js"></script>
+   <!-- endinject -->
 </body>
 </html>

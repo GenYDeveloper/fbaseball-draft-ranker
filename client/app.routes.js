@@ -1,4 +1,6 @@
 (function() {
+   'use strict';
+
    angular
       .module('fbaseballDraftRankerApp')
       .config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
@@ -7,11 +9,11 @@
          $stateProvider
             .state('home', {
                url: '/home',
-               templateUrl: '../views/partials/main.html'
+               templateUrl: '../client/main/main.html'
             })
-            .state('test', {
-               url: '/test',
-               templateUrl: '../views/partials/test.html'
+            .state('about', {
+               url: '/about',
+               templateUrl: '../client/about/about.html'
             });
       }]);
 })();
